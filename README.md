@@ -19,4 +19,15 @@ Steps to install:
 
 I'm becoming a big fan of containers because with both python and C/C++ (ROOT included) you can pull environment variables.
 This is really helpful if you're writing a lot of code and want to stay organized. \
-Other than that, this is just a nice way to make sure your code is deployable/sandboxed (sorta) from the rest of the cluster :)
+Other than that, this is just a nice way to make sure your code is deployable/sandboxed (sorta) from the rest of the cluster :) \\
+
+## Some useful singularity commands
+To check and see what containers you have created on your FRIB account, you can type
+```console
+   singularity instance.list
+```
+If you see a container with the name "TestContainer" (the default of start_env.sh) and you want to delete it, you can do so with:
+```console
+   singularity instance.stop TestContainer
+```
+**Note! You don't have to remove the instance of the container if you make changes to the .bashrc**
