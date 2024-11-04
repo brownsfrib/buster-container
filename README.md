@@ -15,7 +15,8 @@ Steps to install:
    . start_env.sh
    ```
 5. Edit your .bashrc however you want!
+  - If you want to see the changes to your bashrc, you can type *resetEnv*. This is a bash command set in the .bash_functions file.
 
-I'm becoming a big fan of containers because with both python and C/C++ (ROOT included) you can pull environment variables.
+I'm becoming a big fan of containers because with both python and C/C++ (ROOT included) you can pull environment variables. \
 This is really helpful if you're writing a lot of code and want to stay organized.
 Other than that, this is just a nice way to make sure your code is deployable/sandboxed (sorta) from the rest of the cluster :)
